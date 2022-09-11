@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shellhacks - Consumer Subscription Manager</title>
+    </head>
+    
+    <style>
+        body {background-color: powderblue;
+        
+        
+        }
+        h1   {color: black;}
+        p    {color: black;}
+        select {
+        width: 150px;
+        margin: 10px;
+    }
+    </style>
+    <body>
+
+        <nav>
+            <a href="./index.html">Home</a>
+            
+
+            <p>
+              Welcome and thanks for visiting our page that aims to help college students' financial managament skills!
+              As you may know we are college students and money management can be hard to many of us.
+              For thie reason, our service will help you determine the most unused bills you always pay for
+              without using. This can help you improve managing your financing. We cannot wait to have you use
+              our service. 
+           </p>
+
+        <h1>  <center> Consumer Subscription Manager </h1>  </center>
+        
+        <center>
+        <div>Select your Subscription type</div>
+        
+
+        <select name="list" >
+            <!--Add whatever options to this Dropdown-->
+            <option name="Netflix">Netflix</option>
+            <option name="Spotify">Spotify</option>
+            <option name="Youtube">Youtube</option>
+            <option name="APrime">Amazon Prime</option>
+            <option name="Hulu">Hulu</option>
+            <option name="AArcade">Apple Arcade</option>
+            <option name="AMusic">Apple Music</option>
+        </select>
+        </br>
+    
+        
+        <br><br>
+        
+        <div> How much does this service cost per month?</div>
+        </br>
+        $<input type="number" name="Cost" value="10.0" step="0.01" min="0.0" max="900.0">
+                
+        <p>&nbsp;</p>
+            
+
+        <div> What's your personal budget?</div>
+        </br>
+        $<input type="number" name="Cost" value="500.0" step="0.01" min="0.0" max="900.0">
+
+       
+        <p>&nbsp;</p>
+           
+        
+        <!--Testing month counter-->
+         <div>
+         <p>Month: <span>0<span></p>
+         <button id="mainButton">Increment!</button>
+        </div>
+        <script>
+        
+        let counter = document.querySelector("span");
+        let counterState = Number(counter.innerText);
+        const increaseButton = document.getElementById("mainButton");
+        
+        increaseButton.addEventListener("click", () => {
+          counter.innerText = counterState += 1;
+        });
+        </script>
+
+        <br>
+
+         <!--The submit button-->
+         <input type=button onClick="location.href='results.html'"
+         value='Submit'>
+         
+        </center>
+       <div>
+            <div>
+         <center>        
+         <img src = "https://www.freepnglogos.com/uploads/spotify-logo-png/image-gallery-spotify-logo-21.png" style = "width:100px; height: 100px;">
+         <img src = "https://www.freepnglogos.com/uploads/netflix-logo-app-png-16.png" style = "width:100px; height: 100px;">
+         <img src = "https://play-lh.googleusercontent.com/QPKtPRTJyhrYoPqYmjP81aCeYAQrH7ocIC25Tw8spEoKsX7eY0cqXMJp4QfkIq2bSg" style = "width:100px; height: 100px;">
+         <img src = "https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png" style = "width:110px; height: 110px;">
+         <img src = "https://seeklogo.com/images/A/apple-music-icon-logo-D6F77FCC1C-seeklogo.com.png" style = "width:100px; height: 100px;">
+         <img src = "https://i.imgur.com/zGLAgZv.png" style = "width:100px; height: 100px;">
+         <img src = "https://static.wikia.nocookie.net/logopedia/images/4/4b/Apple_Arcade_iOS_icon_lg_102120.svg/revision/latest/scale-to-width-down/250?cb=20211222220714" style = "width:100px; height: 100px;"> 
+        </center>
+    </script>
+
+    </body>
+</html>
